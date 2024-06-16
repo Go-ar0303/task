@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="cardBox__container" id="card">
+        <!-- card left -->
+        <div class="card__left">
+            <div>
+                <img src="Product_Img.jpg" alt="" />
+            </div>
+            <div class="card__compound">
+                <div class="item">
+                    <h4>КБЖУ (на порцию 300 г):</h4>
+                    <p></p>
+                </div>
+                <div class="item">
+                    <p>Белки</p>
+                    <p>26,70 г</p>
+                </div>
+                <div class="item">
+                    <p>Жиры</p>
+                    <p>17,38 г</p>
+                </div>
+                <div class="item">
+                    <p>Углеводы</p>
+                    <p>17,20 г</p>
+                </div>
+                <div class="item">
+                    <p>Калорийность</p>
+                    <p>324,08 ккал</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- card right -->
+        <div class="card__right" id="card_price">
+            <div>
+                <h2 class="card__title">Батат фри</h2>
+                <p>140 г</p>
+                <hr />
+            </div>
+
+            <div class="card__content">
+                <div class="item">
+                    <h4>Соус на выбор</h4>
+                    <p id="sale"></p>
+                </div>
+                <div class="item card__item"   data-id="s1">
+                    <div class="product_price">
+                        Кетчуп+
+                        <span class="price">60</span><span> ₽</span>
+                       
+                    </div>
+
+                    <div class="btn-and-quantity quanity-group">
+                        <div class="counter" >
+                            <div class="btn minus" name="button"  data-action="minus"></div>
+                            
+                            <div class="current"  data-counter>0</div>
+                            
+                            <div class="btn plus qty" name="button" data-action="plus" ></div>
+                        </div>
+                      
+                    </div>
+
+                </div>
+                <div class="item card__item"   data-id="s2">
+                    <div class="product_price">
+                        Сырный+
+                        <span class="price">60 </span><span> ₽</span>
+                        
+                    </div>
+                    <div class="btn-and-quantity quanity-group">
+                        <div class="counter" >
+                            <div class="btn minus" name="button"  data-action="minus"></div>
+                            
+                            <div class="current"  data-counter>0</div>
+                            
+                            <div class="btn plus qty" name="button" data-action="plus" ></div>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="item card__item"   data-id="s3">
+                    <div class="product_price">
+                        Блю-чиз +
+                        <span class="price"> 60</span><span> ₽</span>
+                        
+                    </div>
+                    <div class="btn-and-quantity quanity-group">
+                        <div class="counter" >
+                            <div class="btn minus" name="button"  data-action="minus"></div>
+                            
+                            <div class="current"  data-counter>0</div>
+                            
+                            <div class="btn plus qty" name="button" data-action="plus" ></div>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="item card__item"   data-id="s4">
+                    <div class="product_price">
+                        Барбекю +
+                        <span class="price">60</span><span> ₽</span>
+                        
+                    </div>
+                    <div class="btn-and-quantity quanity-group">
+                        <div class="counter" >
+                            <div class="btn minus" name="button"  data-action="minus"></div>
+                            
+                            <div class="current"  data-counter>0</div>
+                            
+                            <div class="btn plus qty" name="button" data-action="plus" ></div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="buy">
+                <div class="total" id="sum">220 <span>₽</span></div>
+                <button class="card__btn" id="buy"><span>Добавить</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
