@@ -31,7 +31,6 @@ window.addEventListener("click", function (event) {
       let plus = (count.innerText = ++count.innerText);
       if(parseInt(count.innerText) === 1)
         {
-            
             document.getElementById("sale").innerHTML = '1 / 1 за 0₽';
         }
     } 
@@ -69,10 +68,10 @@ function calcCartPrice() {
     const amountEl = item.querySelector("[data-counter]");
     const priceEl = item.querySelector(".price");
     let currentPrice =
-      parseInt(amountEl.innerText) * parseInt(priceEl.innerText);
+       parseInt(amountEl.innerText) * parseInt(priceEl.innerText);
     totalPrice += currentPrice ;
     
-    document.getElementById("sum").innerHTML = totalPrice;
+    document.getElementById("sum").innerHTML = totalPrice - 60;
   });
 
  
