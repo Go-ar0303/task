@@ -74,5 +74,4 @@ function calcCartPrice() {
     document.getElementById("sum").innerHTML = totalPrice - 60;
   });
 
- 
 }
